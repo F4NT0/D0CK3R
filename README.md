@@ -45,3 +45,5 @@
 * **Docker Engine:** Serve para construir imagens de Docker e criar Containers de Docker
 * **Docker Hub:** Isto é um registro para fazer host de várias imagens de Docker
 * **Docker Compose:** Isto serve para definir aplicações com Multiplos Containers de Docker
+
+Mais informações, Leia a [Wiki](https://github.com/F4NT0/Docker_Info.wiki)

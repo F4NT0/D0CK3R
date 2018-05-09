@@ -1,4 +1,5 @@
 # Repositório de Informações Sobre Docker
+![Docker](http://michael-kuehnel.de/assets/img/docker-logo.svg)
 
 ### O que é Docker?
 * Docker é uma open plataform para desenvolvedores e Sysadmins de aplicações distribuidas

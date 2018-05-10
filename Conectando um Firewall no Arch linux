@@ -1,0 +1,15 @@
+COMO SETAR UM FIREWALL NO ARCH LINUX
+
+baixar o programa ufw:
+   sudo pacman -S ufw
+
+acionar o ufw:
+  sudo ufw enable
+
+checar se está funcionando
+  sudo ufw status verbose
+
+ acionar para que continue rodando depois quando iniciar o sistema:
+   sudo systemctl enable ufw.service
+
+ reinicie e teste se esta funcionando de novo

@@ -1,0 +1,26 @@
+iniciando o networkmanager
+  -> NetworkManager start
+listando todas as redes disponiveis:
+  -> nmcli d wifi list
+conectando em uma rede wifi pelo network 
+  -> nmcli dev wifi con "nomerede" password "senharede"
+
+Desligando o wifi do NetWorkManager:
+  nmcli radio wifi off
+
+ Ligando o wifi do NetworkManager:
+  nmcli radio wifi on
+
+ Desconectando de uma rede WIFI:
+   nmcli connection <- verifica quais redes estão ativas e qual vc esta usando
+   nmcli connection down nomerede <- desconecta da rede especifica
+
+ Se não aparecer uma rede, utilize o seguinte comando:
+   nmcli networkin on
+   nmcli networkin off <- desliga a networking
+
+ Para desligar o NetworkManager:
+   systemctl stop NetworkManager.service
+
+ entrando como root dentro de um user
+  sudo su

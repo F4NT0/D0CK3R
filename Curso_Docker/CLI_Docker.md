@@ -48,4 +48,21 @@
     * nome_container é o container que renomeamos anteriormente
     * **Toda vez que inicalizar o container estará lá as informações que você colocou, sem serem perdidas!**
 
+* **Mapear portas com Containers**]
+    * É possiveis para mapear portas de um container para o host
+    * Não precisa ser a porta principal do container
+    * utilizamos o comando `-p` que recebe como parametro:
+        * porta do host:porta do container
+    * ex: `docker container run -p 8080:80 nginx`
+    * fazemos com que o programa que esta na porta 80 dentro do container seja exposto na posta 8080 fora do container
+    * acesse a url http://localhost:8080 por um browser
+    * acesse a url http://localhost:80 por um broser
+    * se os dois levarem a mesma página significa que esta funcionando
+* **Mapeamento de Volumes**
+    * para saber a pasta atual do sistema: `$(pwd)`
+    * fazemos um mapeamento de um diretorio do host com o diretorio dentro do container, podendo refazer qual diretorio será mapeado dentro do container 
+    * utilizando o comando `-v` e tendo como parâmetro um diretório do host e um diretório do container, podemos conectar esses dois diretórios 
+    * `docker container run -v $(pwd)/dirHost:dirContainer imagem`
+    * `docker container run -p 8080:80 -v $(pwd)/html:/usr/share/nginx/html nginx`
+
 

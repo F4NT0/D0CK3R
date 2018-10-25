@@ -3,4 +3,4 @@
 # PARA INICIAR O PROGRAMA: ./DockerImages.sh
 
 printf "Iniciating a test with Docker"
-sudo docker run -ti hello-world
+sudo docker run -it hello-world

@@ -65,4 +65,35 @@
     * `docker container run -v $(pwd)/dirHost:dirContainer imagem`
     * `docker container run -p 8080:80 -v $(pwd)/html:/usr/share/nginx/html nginx`
 
+* **Rodar um servidor web em background**
+    * rodar um container em background é usar pelo modo deamon
+    * `docker container run -d  --name deamon-teste`
+    * `-d` serve para que possa rodar um deamon
+    * `--name` serve para colocar um nome na operação que esta rodando em background
+    * `docker container ps` serve par verificar quais containers estão rodando neste momento
+    * `docker container stop nomeContainer` serve para parar o container que esta rodando em background
+    * ou seja, são 3 comandos básicos:
+        * `docker container start nomeContainer` inicia um container
+        * `docker container restart nomeContainer` reinicia o container
+        * `docker container stop nomeContainer` para o container ser parado
+    * Podemos usar o Container ID como o nome do container dos comandos acima
+    * Outros comandos podem ser:
+        * `docker container ls/ps/list`: lista os containers que estão rodando(ou ls ou ps ou list)
+            * `docker container ls/ps/list -a`: lista todos os containers ja criados
+        * `docker container logs nomeContainer`: apresenta todas as vezes que um container foi chamado, podendo ver informações mais avançadas sobre
+        * `docker container inspect nomeContainer` : serve para ver cada detalhe do container em formato JSON, podendo no terminal enviar essa informação para um arquivo externo. 
+            * `docker container inspect nomeContainer > arquivo.txt`
+        * fazendo com que rode um comando dentro do container:
+            * `docker container exec nomeContainer comandoDesejado`
 
+* **Organização de comandos do Docker**
+    * Antigamente o docker funcionava somente chamando docker e colocar o comando desejado
+    * Para evitar de ficar dubio se estava mexendo com container,imagens ou volumes, a nova versão do docker faz com que deva ser especificado qual dos 3 tipos estão sendo mexidos, por isso que está escrito `container` nos comandos
+    * `docker container ls`: mostra todos os containers rodando
+    * `docker image ls:`: mostra todas as imagens no computador
+    * `docker volume ls`: mostra todos os volumes dos containers
+
+* **Apagando um container/imagem/volumes**
+    * `docker container rm nomeContainer`
+    * `docker image rm nomeContainer`
+    * `docker volume rm nomeContainer`

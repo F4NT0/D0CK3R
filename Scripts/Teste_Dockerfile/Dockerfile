@@ -34,7 +34,7 @@ EXPOSE 8000
 
 # comando para dizer qual processo será executado quando o container for
 # iniciado, neste caso sendo o Python
-ENTRYPOINT ["/etc/python"]
+ENTRYPOINT ["/usr/share/python"]
 
 # comando que será chamado para o ENTRYPOINT definido acima,
 # sendo o comando que será inicializado no python

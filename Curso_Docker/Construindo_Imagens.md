@@ -66,4 +66,14 @@ LABEL maintainer|serve para dizer quem é o autor da imagem|LABEL maintainer 'F4
 RUN | serve para iniciar um comando na imagem| RUN echo 'Hello World'
 
 
+#### Enviando sua imagem para o Docker HUB
+
+* Crie uma conta no Docker HUB
+* verifique todas as imagens no sistema: [_`docker image ls`_]()
+* crie uma tag para depois enviar para o Docker HUB: [_`docker image tag nomeImagem nomeConta/nomeRepo:versao`_]()
+* Faça Login no Docker: [_`docker login --username=nomeConta`_]()
+* Coloque sua Senha do Docker HUB
+* Faça o PUSH da imagem no Docker HUB: [_`docker image push nomeImagem`_]()
+* 
+
 

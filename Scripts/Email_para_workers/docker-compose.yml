@@ -1,0 +1,15 @@
+# Versão 2 do docker-compose
+version: '2'
+# criação de um volume geral do docker-compose
+volumes:
+  dados:
+# definindo lista de services
+services:
+  db: 
+    image: postgres:9.6
+    volumes:
+      # volume dos dados, usando o volume geral
+      - dados:/var/lib/postgresql/data
+      # colocando a pasta scripts do dir Email_para_workers no container
+      - ./scripts:/scripts
+      - ./scripts/init.sql:/docker-entrypoint-initdb.d/init.sql

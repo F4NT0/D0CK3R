@@ -67,3 +67,6 @@ services:
 ```
 * depois de construido o arquivo `docker-compose.yml`
 * para usarmos o docker-compose: [_`docker-compose up`_]()
+* Esperar carregar e instalar todas as dependencias necessárias
+* Quando colocar na web `localhost:90` ele irá mostrar o front-end
+* Quando colocar na web `localhost:3000` ele irá mostrar o back-end

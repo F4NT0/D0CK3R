@@ -23,4 +23,4 @@ services:
     volumes: 
       - ./Frontend:/usr/share/nginx/html/
     ports:
-      - 80:80
+      - 90:80

@@ -1,0 +1,26 @@
+# Versão do sistema do docker-compose
+version: '2'
+# definindo as imagens(que serão os serviços) deste docker-compose
+services:
+# imagem do banco de dados
+  db:
+    image: mongo:3.4
+# imagem do backend do sistema, assim como volume definido e a
+# porta que iremos utilizar do container
+  backend:
+    image: node:8.1
+    volumes:
+      - ./Backend:/Backend
+    ports:
+      - 3000:3000
+# será rodado o comando abaixo dentro do container do backend
+    command: bash -c "cd /Backend && npm i && node app"
+# será criado agora um novo service, que é o front-end
+  frontend:
+    image: nginx:1.13
+# configuramos um volume para conectar o diretorio do front-end externo
+# com o diretorio de dentro do container
+    volumes: 
+      - ./Frontend:/usr/share/nginx/html/
+    ports:
+      - 80:80

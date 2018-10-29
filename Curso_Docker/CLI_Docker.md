@@ -97,3 +97,7 @@
     * `docker container rm nomeContainer`
     * `docker image rm nomeContainer`
     * `docker volume rm nomeContainer`
+
+* **Rodando um comando dentro do Container**
+    * [_`docker container run nomeImagem -c "comando"`_]()
+    * `-c "comando"`: faz com que o comando dentro dos parenteses seja feito dentro do container

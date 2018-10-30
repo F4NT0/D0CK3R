@@ -37,3 +37,17 @@
         4. inicie o docker-compose como Deamon: [_`docker-compose up -d`_]()
         5. faça uma verificação com o seguinte comando: [_`docker-compose exec db psql -U postgres -f /scripts/check.sql`_]()
         6. este comando irá iniciar o arquivo check e mostrar na tela todas as informações configuradas no arquivo `check.sql`
+3. Terceiro Passo
+    1. Crie um diretorio chamado web
+    2. no `docker-compose` faça a parte do front-end
+    3. No `frontend`, conectamos a imagem do `nginx:1.13` 
+    4. Criamos um volume que irá conectar o dir web com  o html do nginx: `./web:/usr/share/nginx/html/`
+    5. para verificar os logs do docker-compose: [_`docker-compose logs -f -t `_]()
+4. Quarto Passo
+    1. Criar o app para enfileirar as mensagens
+    2. será criado em python
+    3. será criado um diretorio chamado app
+    4. um arquivo dentro do diretorio app chamado app.sh
+    5. no arquivo app.sh fazemos as conexões com o arquivo python
+    6. criamos um arquivo python chamado sender.py
+    7. este programa python servirá para fazer a postagem

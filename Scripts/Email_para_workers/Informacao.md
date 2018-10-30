@@ -51,3 +51,11 @@
     5. no arquivo app.sh fazemos as conexões com o arquivo python
     6. criamos um arquivo python chamado sender.py
     7. este programa python servirá para fazer a postagem
+5. Quinto Passo
+    1. Criação de um Proxy Reverso
+    2. para constrolar daonde vai entrar a requisição no nosso projeto
+    3. Criaremos um diretorio dentro do nosso projeto chamado `nginx`
+    4. Dentro dele criamos um arquivo chamado `default.config`
+    5. chamamos no docker-compose na área com o comentário `configuração do proxy reverso`
+    6. Alteramos depois no html para que ele pegue o caminho do proxy reverso, na área do action
+    7. 

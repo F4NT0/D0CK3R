@@ -3,6 +3,6 @@
 --listar todos os bancos de dados
 \l 
 --conectar-se ao email_sender(banco de dados criado no init.sql)
-\c email_sender
+\c email
 -- verificar a descrição de uma tabela do banco de dados
 \d emails

@@ -36,6 +36,9 @@
     * ex: `docker container run --name meu_debian -it debian`
     * um nome ja usado não pode ser feito de novo
   
+* **Renomeando uma Imagem**
+      * utilizamos o subcomando tag
+      * `docker image tag nomeImagem novoNomeImagem`
 * **Reutilizar Containers**
 * Comando para ver todos os containers que estão rodando
     * `docker container ls`

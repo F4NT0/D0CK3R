@@ -1,0 +1,60 @@
+body{
+    /*Aqui fica a cor de fundo do Site*/
+    background-color: black;
+    margin: auto; /*Aqui fica a opção de deixar o site alinhado*/
+}
+/*este p.solid serve para criar uma caixa envolta de um texto*/
+/*para chamar tem que chamar com class = "nomedotipo"*/
+p.solid {border-style: double}
+
+/*Cor do comando h1*/
+h1{
+    color: darkgoldenrod;
+}
+
+/*Cor do comando h2*/
+h2{
+    color: white;
+}
+
+/*cor da fonte dos paragrafos(p)*/
+p{
+    color: green;
+}
+
+/*Fonte da Letra do Texto do site*/
+p.Monospace{
+    font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+}
+
+/*Cor do comando body e o formato de letra*/
+body.Monospace{
+    font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+}
+
+/*cor do comando a*/
+a {
+    color: green;
+}
+
+/*Quando o link não foi visitado ainda: */
+a:link{
+    color: blue;
+}
+
+/*Quando o link ja foi visitado: */
+a:visited{
+    color: red;
+}
+
+/*Quando o mouse passa por cima do link:*/
+a:active{
+    color: purple;
+}
+
+/*tamanho de todas as imagens colocadas no site*/
+img {
+    width: 400px;
+    margin: auto;
+    border: #50ff32;
+}
